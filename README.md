@@ -6,8 +6,18 @@ It applies **random portfolio simulation**, **Sharpe ratio maximization**, and *
 
 ---
 
+## 📌 Project Overview
+- Downloads historical stock price data from **Yahoo Finance**.
+- Computes **log returns** and simulates thousands of random portfolios.
+- Uses **optimization (SLSQP)** to maximize the **Sharpe ratio**.
+- Backtests the optimal portfolio with **rebalancing and transaction costs**.
+- Benchmarks performance against the **S&P 500 Index**.
+- Outputs **optimal weights (CSV)** and detailed **portfolio statistics**.
+
+---
+
 ## 📊 Mathematical Concepts Used
-- **Log Returns**: Calculated using `ln(P_t / P_{t-1})` for stability and aggregation.
+- **Log Returns**: `ln(P_t / P_{t-1})` for stability and aggregation.
 - **Annualized Return (CAGR)**: 
   \\[
   CAGR = (1 + R_{total})^{\\frac{252}{N}} - 1
@@ -30,11 +40,12 @@ It applies **random portfolio simulation**, **Sharpe ratio maximization**, and *
 ## 🛠️ Requirements
 This project is written in **Python 3** and uses the following libraries:
 
-- **NumPy** – Numerical computations
-- **Pandas** – Data handling
-- **Matplotlib** – Plotting
-- **SciPy** – Optimization (`SLSQP` for Sharpe maximization)
-- **yFinance** – Downloading stock price data
+- **NumPy** – Numerical computations  
+- **Pandas** – Data handling  
+- **Matplotlib** – Plotting  
+- **SciPy** – Optimization (`SLSQP` for Sharpe maximization)  
+- **yFinance** – Downloading stock price data  
 
 ---
+
 
