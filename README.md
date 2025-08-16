@@ -1,6 +1,4 @@
-# generate_readme.py
 
-readme_content = """
 # Quantitative Portfolio Optimization
 
 This project implements **Modern Portfolio Theory (MPT)** to construct and backtest an optimal portfolio of stocks using Python.  
